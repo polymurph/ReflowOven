@@ -1,0 +1,15 @@
+/*
+ * hal_gpio.h
+ *
+ *  Created on: Oct 27, 2019
+ *      Author: Edwin
+ */
+
+#ifndef HAL_HAL_GPIO_H_
+#define HAL_HAL_GPIO_H_
+
+#include "../HAL/hal_gpio.h"
+
+
+
+#endif /* HAL_HAL_GPIO_H_ */
