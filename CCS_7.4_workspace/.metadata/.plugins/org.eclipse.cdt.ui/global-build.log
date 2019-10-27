@@ -1,0 +1,1105 @@
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+
+>> Compilation failure
+HAL/subdir_rules.mk:9: recipe for target 'HAL/hal_gpio.obj' failed
+"../HAL/hal_gpio.c", line 12: error #20: identifier "P1DIR" is undefined
+"../HAL/hal_gpio.c", line 13: error #20: identifier "P1REN" is undefined
+"../HAL/hal_gpio.c", line 14: error #20: identifier "P" is undefined
+"../HAL/hal_gpio.c", line 14: error #20: identifier "OUT" is undefined
+"../HAL/hal_gpio.c", line 22: error #20: identifier "bool" is undefined
+"../HAL/hal_gpio.c", line 24: error #20: identifier "P1OUT" is undefined
+"../HAL/hal_gpio.c", line 32: error #20: identifier "bool" is undefined
+"../HAL/hal_gpio.c", line 37: error #20: identifier "bool" is undefined
+"../HAL/hal_gpio.c", line 42: error #20: identifier "bool" is undefined
+9 errors detected in the compilation of "../HAL/hal_gpio.c".
+gmake: *** [HAL/hal_gpio.obj] Error 1
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+'Building file: "../HWO/max31865.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HWO/max31865.d_raw" --obj_directory="HWO"  "../HWO/max31865.c"
+"..\HWO\max31865.h", line 60: warning #1-D: last line of file ends without a newline
+"../HWO/max31865.c", line 49: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 81: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 108: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 140: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 266: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 294: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 336: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 338: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 356: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 383: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 402: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 428: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 454: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 481: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 15: remark #1534-D: (ULP 7.1) Detected use of global variable "a1" within one function "max31865_readCelsius". Recommend placing variable in the function locally
+"../HWO/max31865.c", line 17: remark #1534-D: (ULP 7.1) Detected use of global variable "a2" within one function "max31865_readCelsius". Recommend placing variable in the function locally
+"../HWO/max31865.c", line 19: remark #1534-D: (ULP 7.1) Detected use of global variable "a3" within one function "max31865_readCelsius". Recommend placing variable in the function locally
+"../HWO/max31865.c", line 21: remark #1534-D: (ULP 7.1) Detected use of global variable "a4" within one function "max31865_readCelsius". Recommend placing variable in the function locally
+"../HWO/max31865.c", line 23: remark #1534-D: (ULP 7.1) Detected use of global variable "a5" within one function "max31865_readCelsius". Recommend placing variable in the function locally
+"../HWO/max31865.c", line 336 (col. 7): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 338 (col. 70): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 356 (col. 7): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 358 (col. 37): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 361 (col. 41): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 362 (col. 23): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 363 (col. 24): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 364 (col. 24): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 365 (col. 24): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 366 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 383 (col. 7): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 385 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: "../HWO/max31865.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+
+>> Compilation failure
+HAL/subdir_rules.mk:9: recipe for target 'HAL/hal_gpio.obj' failed
+"..\HAL\../HAL/hal_gpio.h", line 18: warning #93-D: identifier-list parameters may only be used in a function definition
+"../HAL/hal_gpio.c", line 16: error #20: identifier "P" is undefined
+"../HAL/hal_gpio.c", line 37: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_1"
+"../HAL/hal_gpio.c", line 42: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_2"
+1 error detected in the compilation of "../HAL/hal_gpio.c".
+gmake: *** [HAL/hal_gpio.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+"..\HAL\../HAL/hal_gpio.h", line 18: warning #93-D: identifier-list parameters may only be used in a function definition
+"../HAL/hal_gpio.c", line 37: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_1"
+"../HAL/hal_gpio.c", line 42: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_2"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+"..\HAL\../HAL/hal_gpio.h", line 17: warning #93-D: identifier-list parameters may only be used in a function definition
+"../HAL/hal_gpio.c", line 37: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_1"
+"../HAL/hal_gpio.c", line 42: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_2"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+
+>> Compilation failure
+HAL/subdir_rules.mk:9: recipe for target 'HAL/hal_gpio.obj' failed
+"..\HAL\../HAL/hal_gpio.h", line 17: warning #93-D: identifier-list parameters may only be used in a function definition
+"../HAL/hal_gpio.c", line 9: error #11-D: unrecognized preprocessing directive
+"../HAL/hal_gpio.c", line 38: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_1"
+"../HAL/hal_gpio.c", line 43: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_2"
+1 error detected in the compilation of "../HAL/hal_gpio.c".
+gmake: *** [HAL/hal_gpio.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+"..\HAL\../HAL/hal_gpio.h", line 17: warning #93-D: identifier-list parameters may only be used in a function definition
+"../HAL/hal_gpio.c", line 38: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_1"
+"../HAL/hal_gpio.c", line 43: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_2"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+
+>> Compilation failure
+HAL/subdir_rules.mk:9: recipe for target 'HAL/hal_gpio.obj' failed
+"../HAL/hal_gpio.c", line 30: error #148: declaration is incompatible with "void hal_gpio_set_LED_2(bool)" (declared at line 17 of "..\HAL\../HAL/hal_gpio.h")
+"../HAL/hal_gpio.c", line 38: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_1"
+"../HAL/hal_gpio.c", line 43: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_2"
+1 error detected in the compilation of "../HAL/hal_gpio.c".
+gmake: *** [HAL/hal_gpio.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+
+>> Compilation failure
+HAL/subdir_rules.mk:9: recipe for target 'HAL/hal_gpio.obj' failed
+"../HAL/hal_gpio.c", line 30: error #148: declaration is incompatible with "void hal_gpio_set_LED_2(bool)" (declared at line 17 of "..\HAL\../HAL/hal_gpio.h")
+"../HAL/hal_gpio.c", line 38: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_1"
+"../HAL/hal_gpio.c", line 43: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_2"
+1 error detected in the compilation of "../HAL/hal_gpio.c".
+gmake: *** [HAL/hal_gpio.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+"../HAL/hal_gpio.c", line 38: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_1"
+"../HAL/hal_gpio.c", line 43: warning #994-D: missing return statement at end of non-void function "hal_gpio_get_button_2"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 clean -O 
+ 
+DEL /F  "reflow.hex"  "reflow.out" 
+DEL /F "gpio_test_191027.obj" "HAL\hal_gpio.obj" "HWO\max31865.obj" 
+DEL /F "gpio_test_191027.d" "HAL\hal_gpio.d" "HWO\max31865.d" 
+Could Not Find C:\Users\Edwin\Documents\20_Projects\07_GitHub_Projects\ReflowOven\CCS_7.4_workspace\reflow\Debug\reflow.hex
+Could Not Find C:\Users\Edwin\Documents\20_Projects\07_GitHub_Projects\ReflowOven\CCS_7.4_workspace\reflow\Debug\gpio_test_191027.obj
+'Finished clean'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+'Building file: "../HWO/max31865.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HWO/max31865.d_raw" --obj_directory="HWO"  "../HWO/max31865.c"
+"..\HWO\max31865.h", line 60: warning #1-D: last line of file ends without a newline
+"../HWO/max31865.c", line 49: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 81: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 108: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 140: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 266: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 294: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 336: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 338: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 356: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 383: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 402: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 428: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 454: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 481: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 15: remark #1534-D: (ULP 7.1) Detected use of global variable "a1" within one function "max31865_readCelsius". Recommend placing variable in the function locally
+"../HWO/max31865.c", line 17: remark #1534-D: (ULP 7.1) Detected use of global variable "a2" within one function "max31865_readCelsius". Recommend placing variable in the function locally
+"../HWO/max31865.c", line 19: remark #1534-D: (ULP 7.1) Detected use of global variable "a3" within one function "max31865_readCelsius". Recommend placing variable in the function locally
+"../HWO/max31865.c", line 21: remark #1534-D: (ULP 7.1) Detected use of global variable "a4" within one function "max31865_readCelsius". Recommend placing variable in the function locally
+"../HWO/max31865.c", line 23: remark #1534-D: (ULP 7.1) Detected use of global variable "a5" within one function "max31865_readCelsius". Recommend placing variable in the function locally
+"../HWO/max31865.c", line 336 (col. 7): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 338 (col. 70): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 356 (col. 7): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 358 (col. 37): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 361 (col. 41): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 362 (col. 23): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 363 (col. 24): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 364 (col. 24): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 365 (col. 24): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 366 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 383 (col. 7): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 385 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: "../HWO/max31865.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "../HAL/hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+'Building file: "../HWO/max31865.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HWO/max31865.d_raw" --obj_directory="HWO"  "../HWO/max31865.c"
+"../HWO/max31865.c", line 49: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 81: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 108: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 140: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 266: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 294: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 336: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 338: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 356: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 383: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 402: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 428: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 454: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 481: remark #1537-D: (ULP 9.1) Function parameter device (type "struct <unnamed>") is being passed by value and should be passed by reference using pointer
+"../HWO/max31865.c", line 15: remark #1534-D: (ULP 7.1) Detected use of global variable "a1" within one function "max31865_readCelsius". Recommend placing variable in the function locally
+"../HWO/max31865.c", line 17: remark #1534-D: (ULP 7.1) Detected use of global variable "a2" within one function "max31865_readCelsius". Recommend placing variable in the function locally
+"../HWO/max31865.c", line 19: remark #1534-D: (ULP 7.1) Detected use of global variable "a3" within one function "max31865_readCelsius". Recommend placing variable in the function locally
+"../HWO/max31865.c", line 21: remark #1534-D: (ULP 7.1) Detected use of global variable "a4" within one function "max31865_readCelsius". Recommend placing variable in the function locally
+"../HWO/max31865.c", line 23: remark #1534-D: (ULP 7.1) Detected use of global variable "a5" within one function "max31865_readCelsius". Recommend placing variable in the function locally
+"../HWO/max31865.c", line 336 (col. 7): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 338 (col. 70): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 356 (col. 7): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 358 (col. 37): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 361 (col. 41): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 362 (col. 23): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 363 (col. 24): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 364 (col. 24): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 365 (col. 24): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 366 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 383 (col. 7): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../HWO/max31865.c", line 385 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: "../HWO/max31865.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_test_191027.obj' failed
+"../gpio_test_191027.c", line 9: fatal error #1965: cannot open source file "hal_gpio.h"
+1 catastrophic error detected in the compilation of "../gpio_test_191027.c".
+Compilation terminated.
+gmake: *** [gpio_test_191027.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+"../gpio_test_191027.c", line 22: warning #112-D: statement is unreachable
+"../gpio_test_191027.c", line 18: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+'Finished building: "../gpio_test_191027.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+warning #10420-D: For FRAM devices, at start up, the GPIO power-on default high-impedance mode needs to be disabled to activate previously configured port settings. This can be done by clearing the LOCKLPM5 bit in PM5CTL0 register.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'reflow.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'reflow.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+warning #10420-D: For FRAM devices, at start up, the GPIO power-on default high-impedance mode needs to be disabled to activate previously configured port settings. This can be done by clearing the LOCKLPM5 bit in PM5CTL0 register.
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'reflow.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+warning #10420-D: For FRAM devices, at start up, the GPIO power-on default high-impedance mode needs to be disabled to activate previously configured port settings. This can be done by clearing the LOCKLPM5 bit in PM5CTL0 register.
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+
+>> Compilation failure
+HAL/subdir_rules.mk:9: recipe for target 'HAL/hal_gpio.obj' failed
+"../HAL/hal_gpio.c", line 19: error #20: identifier "P0DIR" is undefined
+"../HAL/hal_gpio.c", line 20: error #20: identifier "P0REN" is undefined
+"../HAL/hal_gpio.c", line 21: error #20: identifier "P0OUT" is undefined
+"../HAL/hal_gpio.c", line 33: error #20: identifier "P0OUT" is undefined
+4 errors detected in the compilation of "../HAL/hal_gpio.c".
+gmake: *** [HAL/hal_gpio.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+warning #10420-D: For FRAM devices, at start up, the GPIO power-on default high-impedance mode needs to be disabled to activate previously configured port settings. This can be done by clearing the LOCKLPM5 bit in PM5CTL0 register.
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'reflow.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+warning #10420-D: For FRAM devices, at start up, the GPIO power-on default high-impedance mode needs to be disabled to activate previously configured port settings. This can be done by clearing the LOCKLPM5 bit in PM5CTL0 register.
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'reflow.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+warning #10420-D: For FRAM devices, at start up, the GPIO power-on default high-impedance mode needs to be disabled to activate previously configured port settings. This can be done by clearing the LOCKLPM5 bit in PM5CTL0 register.
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'reflow.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+"../gpio_test_191027.c", line 22: warning #112-D: statement is unreachable
+"../gpio_test_191027.c", line 18: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+'Finished building: "../gpio_test_191027.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+"../gpio_test_191027.c", line 22: warning #112-D: statement is unreachable
+"../gpio_test_191027.c", line 18: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+'Finished building: "../gpio_test_191027.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'reflow.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'reflow.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'reflow.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+"../gpio_test_191027.c", line 22: warning #112-D: statement is unreachable
+"../gpio_test_191027.c", line 18: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+'Finished building: "../gpio_test_191027.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'reflow.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../gpio_test_191027.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="gpio_test_191027.d_raw"  "../gpio_test_191027.c"
+"../gpio_test_191027.c", line 23: warning #112-D: statement is unreachable
+"../gpio_test_191027.c", line 19: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+'Finished building: "../gpio_test_191027.c"'
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project reflow ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+'Building file: "../HAL/hal_gpio.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Users/Edwin/Documents/20_Projects/07_GitHub_Projects/ReflowOven/CCS_7.4_workspace/reflow" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+'Finished building: "../HAL/hal_gpio.c"'
+ 
+'Building target: "reflow.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"reflow.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_19.6.0.STS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="reflow_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "reflow.out" "./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "reflow.out"'
+ 
+
+**** Build Finished ****

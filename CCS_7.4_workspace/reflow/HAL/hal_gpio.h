@@ -9,13 +9,16 @@
 #define HAL_HAL_GPIO_H_
 
 #include <stdbool.h>
-#include "../HAL/hal_gpio.h"
 
 void hal_gpio_init();
 
 void hal_gpio_set_LED_1(bool level);
 
-void hal_gpio_set_LED_2(bool_level);
+void hal_gpio_set_LED_2(bool level);
+
+void hal_gpio_toggle_LED_1();
+
+void hal_gpio_toggle_LED_2();
 
 bool hal_gpio_get_button_1();
 

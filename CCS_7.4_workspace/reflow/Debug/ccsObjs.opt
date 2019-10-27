@@ -1,0 +1,1 @@
+"./gpio_test_191027.obj" "./HAL/hal_gpio.obj" "./HWO/max31865.obj" "../lnk_msp430fr6989.cmd" -llibmpu_init.a -llibmath.a -llibc.a 
