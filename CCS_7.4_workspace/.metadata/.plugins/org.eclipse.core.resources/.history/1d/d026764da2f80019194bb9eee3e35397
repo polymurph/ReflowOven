@@ -17,10 +17,8 @@ void hal_gpio_set_LED_1(bool level);
 
 void hal_gpio_set_LED_2(bool_level);
 
-bool hal_gpio_get_button_1();
+void hal_gpio_get_button_1();
 
-bool hal_gpio_get_button_2();
-
-void hal_gpio_chipselect_MAX31865(bool level);
+void hal_gpio_get_button_2();
 
 #endif /* HAL_HAL_GPIO_H_ */
